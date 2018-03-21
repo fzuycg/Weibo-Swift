@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WelcomeViewController" customModule="WeiBo" customModuleProvider="target">
+            <connections>
+                <outlet property="iconImageBottomCons" destination="fGU-1J-8ND" id="I9n-19-k9W"/>
+                <outlet property="iconImageView" destination="qJo-Il-940" id="1oh-SW-nMw"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome_bg" translatesAutoresizingMaskIntoConstraints="NO" id="lSy-NJ-r9K">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome_userIcon" translatesAutoresizingMaskIntoConstraints="NO" id="qJo-Il-940">
+                    <rect key="frame" x="142.5" y="427" width="90" height="90"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="90" id="CaU-Oe-YEH"/>
+                        <constraint firstAttribute="height" constant="90" id="rr0-q8-5PQ"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="45"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="欢迎回来" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="glE-rN-V7b">
+                    <rect key="frame" x="146" y="537" width="82" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="glE-rN-V7b" firstAttribute="top" secondItem="qJo-Il-940" secondAttribute="bottom" constant="20" id="DpT-ma-0a2"/>
+                <constraint firstItem="lSy-NJ-r9K" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="JOY-cL-tq5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="lSy-NJ-r9K" secondAttribute="bottom" id="RED-mp-RsS"/>
+                <constraint firstItem="glE-rN-V7b" firstAttribute="centerX" secondItem="qJo-Il-940" secondAttribute="centerX" id="Wg6-3r-8Bf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="lSy-NJ-r9K" secondAttribute="trailing" id="Y33-V1-cOc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="qJo-Il-940" secondAttribute="bottom" constant="150" id="fGU-1J-8ND"/>
+                <constraint firstItem="qJo-Il-940" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="nHM-C7-JeR"/>
+                <constraint firstItem="lSy-NJ-r9K" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="wGa-Cg-OE7"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="25.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="welcome_bg" width="640" height="1136"/>
+        <image name="welcome_userIcon" width="40" height="40"/>
+    </resources>
+</document>

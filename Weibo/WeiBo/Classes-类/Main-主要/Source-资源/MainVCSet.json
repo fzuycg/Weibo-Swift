@@ -1,0 +1,22 @@
+ [
+  {
+  "vcName": "HomeViewController",
+  "title":"首页",
+  "imageName":"首页"
+  },
+  {
+  "vcName": "MessageViewController",
+  "title":"消息",
+  "imageName":"消息"
+  },
+  {
+  "vcName": "DiscoverViewController",
+  "title":"发现",
+  "imageName":"发现"
+  },
+  {
+  "vcName": "ProfileViewController",
+  "title":"我的",
+  "imageName":"我的"
+  }
+  ]

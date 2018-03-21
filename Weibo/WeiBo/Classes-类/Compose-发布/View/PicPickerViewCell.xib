@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="PicPickerViewCell" reuseIdentifier="" id="gTV-IL-0wX" customClass="PicPickerViewCell" customModule="WeiBo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="72" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="72" height="70"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic_picker_add" translatesAutoresizingMaskIntoConstraints="NO" id="A9T-at-GkJ">
+                        <rect key="frame" x="0.0" y="0.0" width="72" height="70"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="7"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T5A-g8-RDf">
+                        <rect key="frame" x="0.0" y="0.0" width="72" height="70"/>
+                    </button>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YLE-8T-9sz">
+                        <rect key="frame" x="48" y="0.0" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="0Iz-I9-Ajh"/>
+                            <constraint firstAttribute="height" constant="24" id="aad-co-Ifr"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="pic_picker_del"/>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="T5A-g8-RDf" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="5EE-gt-iJV"/>
+                <constraint firstAttribute="bottom" secondItem="T5A-g8-RDf" secondAttribute="bottom" id="CGa-pS-GQe"/>
+                <constraint firstItem="T5A-g8-RDf" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="OOX-uZ-ej7"/>
+                <constraint firstItem="A9T-at-GkJ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="WNs-Tr-YH9"/>
+                <constraint firstItem="A9T-at-GkJ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="hW5-Mu-pmY"/>
+                <constraint firstAttribute="trailing" secondItem="YLE-8T-9sz" secondAttribute="trailing" id="mMA-Ng-2FX"/>
+                <constraint firstItem="YLE-8T-9sz" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="nK8-JR-yjn"/>
+                <constraint firstAttribute="bottom" secondItem="A9T-at-GkJ" secondAttribute="bottom" id="pCN-kp-L54"/>
+                <constraint firstAttribute="trailing" secondItem="A9T-at-GkJ" secondAttribute="trailing" id="uGp-1h-Ybk"/>
+                <constraint firstAttribute="trailing" secondItem="T5A-g8-RDf" secondAttribute="trailing" id="vnT-vm-bvD"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="72" height="70"/>
+            <connections>
+                <outlet property="addPicBtn" destination="T5A-g8-RDf" id="7vb-q3-KsA"/>
+                <outlet property="delPicBtn" destination="YLE-8T-9sz" id="V4m-Td-cDm"/>
+                <outlet property="imageView" destination="A9T-at-GkJ" id="gpA-vp-jda"/>
+            </connections>
+            <point key="canvasLocation" x="-300" y="25"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="pic_picker_add" width="80" height="80"/>
+        <image name="pic_picker_del" width="20" height="20"/>
+    </resources>
+</document>

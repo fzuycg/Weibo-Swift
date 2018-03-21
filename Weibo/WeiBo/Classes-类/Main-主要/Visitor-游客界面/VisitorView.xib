@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="VisitorView" customModule="WeiBo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="关注一些人，回到这里看看有什么惊喜" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yn6-gF-upK">
+                    <rect key="frame" x="40" y="363.5" width="295" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T4f-Ea-fee">
+                    <rect key="frame" x="82.5" y="410.5" width="90" height="36"/>
+                    <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="5T3-v8-vCC"/>
+                        <constraint firstAttribute="width" constant="90" id="mfJ-Sj-Yu3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="注 册">
+                        <color key="titleColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="visitor_首页" translatesAutoresizingMaskIntoConstraints="NO" id="PIS-y2-cF9">
+                    <rect key="frame" x="107.5" y="173.5" width="160" height="160"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="160" id="cdT-wc-UuN"/>
+                        <constraint firstAttribute="height" constant="160" id="l4j-R2-Jd8"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wi3-0q-SqJ">
+                    <rect key="frame" x="202.5" y="410.5" width="90" height="36"/>
+                    <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="登 录">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.92833914974619292" green="0.92833914974619292" blue="0.92833914974619292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="PIS-y2-cF9" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="21k-kP-W0i"/>
+                <constraint firstItem="T4f-Ea-fee" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="-60" id="KiO-2I-e7r"/>
+                <constraint firstItem="PIS-y2-cF9" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-80" id="O4S-vm-xQ7"/>
+                <constraint firstItem="yn6-gF-upK" firstAttribute="top" secondItem="PIS-y2-cF9" secondAttribute="bottom" constant="30" id="O5A-ns-dmZ"/>
+                <constraint firstItem="wi3-0q-SqJ" firstAttribute="centerY" secondItem="T4f-Ea-fee" secondAttribute="centerY" id="PJq-dx-Byq"/>
+                <constraint firstItem="T4f-Ea-fee" firstAttribute="width" secondItem="wi3-0q-SqJ" secondAttribute="width" id="T6h-PI-hvE"/>
+                <constraint firstItem="T4f-Ea-fee" firstAttribute="top" secondItem="yn6-gF-upK" secondAttribute="bottom" constant="30" id="dy6-UK-1a3"/>
+                <constraint firstItem="T4f-Ea-fee" firstAttribute="height" secondItem="wi3-0q-SqJ" secondAttribute="height" id="fbZ-j0-rmc"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="yn6-gF-upK" secondAttribute="trailing" constant="40" id="qFH-gK-xUP"/>
+                <constraint firstItem="yn6-gF-upK" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="40" id="vyM-yk-nQT"/>
+                <constraint firstItem="wi3-0q-SqJ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="60" id="wWM-SM-hho"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="iconImageView" destination="PIS-y2-cF9" id="yKh-Sl-Gyf"/>
+                <outlet property="loginBtn" destination="wi3-0q-SqJ" id="AEY-Af-W0m"/>
+                <outlet property="registerBtn" destination="T4f-Ea-fee" id="uiU-SV-LTt"/>
+                <outlet property="tipLabel" destination="yn6-gF-upK" id="d1l-xV-Sbs"/>
+            </connections>
+            <point key="canvasLocation" x="26.5" y="52.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="visitor_首页" width="400" height="400"/>
+    </resources>
+</document>
